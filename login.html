@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #2E3A48;
+        }
+
+        .container {
+            background: rgba(59, 75, 92, 0.9);
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 50px 30px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            color: aliceblue;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        input {
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            outline: none;
+            background: #4C5B6B;
+        }
+
+        label {
+            color: white;
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            pointer-events: none;
+            transition: 0.3s ease all;
+            padding: 0 5px;
+        }
+
+        input:focus+label,
+        input:not(:placeholder-shown)+label {
+            top: -20px;
+            left: 10px;
+            font-size: 0.8rem;
+            color: #007bff;
+        }
+
+        button {
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            background: linear-gradient(135deg, #243645 0%, #1E2A38 100%);
+            color: rgb(250, 250, 249);
+            font-weight: bold;
+            font-size: 3vh;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            /* 👈 transición suave */
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            background: #0056b3;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="">
+            <div class="input-group">
+                <input type="text" id="email" placeholder=" " required>
+                <label for="email">Correo</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" id="submitButton">Ingresar</button>
+        </form>
+    </div>
+</body>
+
+</html>
